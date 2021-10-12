@@ -44,4 +44,14 @@ public class Notification implements Serializable {
     public void setMessage(String message) {
         this.message = message;
     }
+
+    @Override
+    public String toString() {
+        return "Notification{" +
+                "notificationId='" + notificationId + '\'' +
+                ", notificationCreatedDate=" + notificationCreatedDate +
+                ", seen=" + seen +
+                ", message='" + message + '\'' +
+                '}';
+    }
 }
